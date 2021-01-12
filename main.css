@@ -39,10 +39,16 @@ nav {
   padding: 10px;
   margin: 10px 0 10px 0;
   background-color: rgba(233, 229, 217, 0.39);
+  text-align: center;
 }
 
 main {
   background-color: whitesmoke;
+}
+
+.container {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 section {
@@ -54,6 +60,12 @@ section {
 .welcome-grp {
   background-color: rgb(204, 186, 138);
 }
+
+.menu-options {
+  max-width: 70%;
+  margin-left: 8%;
+}
+
 
 li {
   margin: 10px;
@@ -82,10 +94,101 @@ nav {font-size: 12px;}
   padding: 7px;
 }
 
-a {
-  text-decoration: none;
+a {text-decoration: none;}
+a:hover {color: whitesmoke;}
+a:visited {color: black;}
+
+/*---NAVIGATION ---*/
+
+.menu-btn {
+  padding: 10px 15px;
+  background-color: rgb(204, 186, 138);
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 18px;
+  border: 1px solid whitesmoke;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color:  rgb(238, 236, 229);
+  color: rgb(36, 35, 35);
+  border: 2px solid rgb(36, 35, 35);
+}
+
+li:hover {
+  background-color: rgb(204, 186, 138);
+  border: 2px solid whitesmoke;
+}
+
+/* -------- Slideshow container------- */
+.container 
+{ 
+max-width: 1000px; 
+position: relative; 
+margin: auto; 
+} 
+
+/* Caption text */
+.text 
+{ 
+color: #f2f2f2; 
+font-size: 15px; 
+padding: 20px 15px; 
+position: absolute; 
+right: 10px; 
+bottom: 10px; 
+width: 40%; 
+background: rgba(0, 0, 0, .7); 
+text-align: left; 
+} 
+
+/* The dots/bullets/indicators */
+.dot 
+{ 
+height: 15px; 
+width: 15px; 
+margin: 0 2px; 
+background-color: transparent; 
+border-color: #ddd; 
+border-width: 5 px; 
+border-style: solid; 
+border-radius: 50%; 
+display: inline-block; 
+transition: border-color 0.6s ease; 
+} 
+
+.active 
+{ 
+border-color: #666; 
+} 
+
+/* Animation */
+.fade 
+{ 
+-webkit-animation-name: fade-image; 
+-webkit-animation-duration: 1.5s; 
+animation-name: fade-image; 
+animation-duration: 1.5s; 
+} 
+
+@-webkit-keyframes fade-image 
+{ 
+from {opacity: .6} 
+to {opacity: 1} 
+} 
+
+@keyframes fade-image 
+{ 
+from {opacity: .6} 
+to {opacity: 1} 
+} 
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) 
+{ 
+.text {font-size: 11px} 
+} 
 
 /*-- pictures --- */
 
@@ -117,7 +220,7 @@ a {
 nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -199,6 +302,12 @@ form textarea {
     margin-right: 5%;
 
   }
+
+  .container {
+    margin-left:5%;
+    margin-right:5%;
+  }
+
   .accomodations-grp {
     display: flex; 
     flex-direction: row;
@@ -216,5 +325,15 @@ form textarea {
   .welcome-grp {
     display: flex; 
     flex-direction: row;
+  }
+  
+  .menu-options {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
