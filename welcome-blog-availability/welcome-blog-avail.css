@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* -------  General Styles ------- */
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  color: whitesmoke;
+  background-color: whitesmoke;
+}
+
+/* ---- Text Formatting ---- */
+
+h1, h2, p {
+  text-align: center;
+}
+
+/* ----- Flexbox Modifier Styles ----- */
+.welcome-grp {
+  background-color: darkslategray;
+}
+
+.welcome-message p {
+  text-align: left;
+  padding: 7px;
+}
+
+.welcome-grp {
+  display: flex; 
+  flex-direction: column;
+}
+
+.welcome-item {
+  flex: 1;
+  margin:10px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-message {
+  flex: 1;
+  background-color: rgba(245, 245, 245, 0.034);
+  border: 2px solid whitesmoke;
+}
+
+.welcome-item-detail {
+  height: 200px;
+  margin-bottom: 10px;
+  background-color: rgba(245, 245, 245, 0.082);
+  border: 2px solid whitesmoke;
+}
+
+/* ----MEDIA QUERY --------------------------------*/
+
+@media all and (min-width: 600px) {
+  .welcome-grp {
+    display: flex; 
+    flex-direction: row;
+  }
+
+  .welcome-message { margin-left: 25%;}
+  .welcome-item-detail { margin-right: 25% }
+  .welcome-message {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+   }
+ 
+   .welcome-item-detail {
+     margin-top: 20px;
+     margin-bottom: 20px;
+   }
+  }

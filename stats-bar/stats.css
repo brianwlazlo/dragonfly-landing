@@ -1,0 +1,23 @@
+.stats {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats-item {
+  flex: 1;
+  margin: 10px 2%;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.stats-border {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-radius: 8px;
+}
+
+.stats-type {
+  font-size: 24px;
+  font-weight: bolder;
+}
