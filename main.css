@@ -2,219 +2,661 @@
   box-sizing: border-box;
 }
 
-
-/* -------  General Styles ------- */
-
 body {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;  
 }
 
 header {
-  
-  padding: 10px 0 10px 0;
-  background-color: rgb(204, 186, 138);
+  color: white;
+  padding: 40px 10px 40px 10px;
   text-align: center;
-  color: whitesmoke;
-
-  /*
-  height: 350px;
+  height: 250px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 7%;
-
-  
-  background-image: url(assets/images/exterior/arial-wideshot-lookingdown-backyard-water-dock.png);
-
-  background-image: url(assets/images/exterior/sunny-front-yard-lookingEast-southsideofHouse.png);
-  
-  background-image: url(assets/images/exterior/arial-wideshot-overwater-towardsHouse.png);
-  */
-  
+  background-image: url(assets/images/exterior/arial-wideshot-HigherOverWater-towardsHouse.png);
+  border: 2px solid red;
+}
+header h1, header h3 {font-weight: lighter;}
+@media all and (min-width: 600px) {
+  header {
+    height: 400px;
+  }
+  header h1 {
+    letter-spacing: 1px;
+    font-size: 48px;
+  }
+  header h3 {
+    font-size: 36px;
+    letter-spacing: 1px;
+    padding-top: 50px;
+  }
 }
 
 nav {
   padding: 10px;
   margin: 10px 0 10px 0;
   background-color: rgba(233, 229, 217, 0.39);
+  text-align: center;
+  border: 2px solid red;
 }
 
-main {
-  background-color: whitesmoke;
+/* --- PRIMARY COLOR CONTROL ---*/
+
+.welcome-grp, .menu-btn, nav li:hover, .contact-form {
+  background-color: darkslategray;
 }
 
-section {
-	padding: 10px;
-  margin: 10px;
-  background-color: whitesmoke;
+/* -- MODIFIERS ---- */
+.hide {display: none;}
+.color-text {color: darkslategray;}
+
+
+/*---------  NAVIGATION STYLE START -------------*/
+nav {font-size: 12px;}
+
+a {
+  text-decoration: none; 
+  color: darkslategray;
 }
 
-.welcome-grp {
-  background-color: rgb(204, 186, 138);
-}
+a:hover {color: whitesmoke;}
 
-li {
-  margin: 10px;
-  padding: 7px 18px 7px 18px;
-  border-radius: 5px;
-  border: 2px solid black;
-}
-
-/* ---- TEXT FORMATTTING ----------------- */
-
-
-.accomodations-item p  {
-  font-size: 22px;
+.menu-btn {
+  color: whitesmoke;
+  padding: 10px 15px;
   font-weight: bolder;
-  color: rgb(245, 244, 240);
+  font-size: 12px;
+  border: 1px solid whitesmoke;
+  cursor: pointer;
 }
 
-h1, h2, p {
+.menu-options {
+  max-width: 70%;
+  margin-left: 8%;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+nav li {
+  margin: 10px;
+  padding: 7px 10px 7px 10px;
+  border-radius: 5px;
+  border: 2px solid darkslategray;
+}
+
+button:hover {
+  background-color:  rgb(238, 236, 229);
+  color: darkslategray;
+  border: 2px solid rgb(36, 35, 35);
+}
+
+li:hover {
+  border: 2px solid whitesmoke;
+}
+
+@media all and (min-width: 600px) {
+  .menu-options {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+/*---------  NAVIGATION STYLE END -------------*/
+
+/* ------- SLIDE SHOW STYLE START ----------- */
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.slider {
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* --- prev/next start ---- */
+.slider .left-slide, .slider .right-slide {
+  position: absolute;
+  height: 50px;
+  width: 60px;
+  background-color: #23252577;
+  color:rgb(241, 237, 237);
+  font-size: 20px;
+  top: 50%;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.left-slide:hover { cursor: pointer;}
+.right-slide:hover { cursor: pointer;}
+
+.slider .left-slide {left: -10px;}
+.slider .right-slide {right: -10px;}
+/* --- prev/next end ---- */
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 400px;
+  height: 250px;
+}
+
+/* --- automatic navigation --- */
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  /*width: 800px;*/
+  width: 100%;
+  justify-content: center;
+  margin-top: 58%;
+}
+
+.navigation-auto div {
+  border: 2px solid whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {background-color: whitesmoke;}
+#radio2:checked ~ .navigation-auto .auto-btn2 {background-color: whitesmoke;}
+#radio3:checked ~ .navigation-auto .auto-btn3 {background-color: whitesmoke;}
+#radio4:checked ~ .navigation-auto .auto-btn4 {background-color: whitesmoke;}
+#radio5:checked ~ .navigation-auto .auto-btn5 {background-color: whitesmoke;}
+#radio6:checked ~ .navigation-auto .auto-btn6 {background-color: whitesmoke;}
+
+
+#radio1:checked ~ .first{margin-left:0;}
+#radio2:checked ~ .first{margin-left:-20%;}
+#radio3:checked ~ .first{margin-left:-40%;}
+#radio4:checked ~ .first{margin-left:-60%;}
+#radio5:checked ~ .first{margin-left:-80%;}
+#radio6:checked ~ .first{margin-left:-100%;}
+
+@media all and (min-width: 600px) {
+  .slider {
+    width: 800px;
+    height: 500px;
+  }
+
+  .slide img {
+    width: 800px;
+    height: 500px;
+  }
+
+  .slider .left-slide, .slider .right-slide {font-size: 60px;}
+  .slider .left-slide {left: 10px;}
+  .slider .right-slide {right: 10px;}
+}
+
+/* ------- SLIDE SHOW STYLE END ------------- */
+
+/*--------- STATS BAR STYLE START ------------*/
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 5%;
+  border: 2px red solid;
+}
+
+.stats-item {
+  flex: 1;
+  margin: 10px;
+  padding: 0px 20px;
   text-align: center;
 }
 
-nav {font-size: 12px;}
+.stats-border {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-radius: 8px;
+}
+
+h4 {
+  font-size: 12px;
+  color: darkslategray;
+}
+
+.stats-type {
+  font-size: 18px;
+  font-weight: bolder;
+  color: darkslategray;
+}
+
+@media all and (min-width: 600px) {
+  .stats-type {
+    font-size: 36px;
+    font-weight: bolder;
+    color: darkslategray;
+  }
+  .stats { margin: 10px 15% 20px 15%; }
+}
+  
+/*--------- STATS BAR STYLE END ------------*/
+
+/*--------- WELCOME GRP STYLE START --------*/
+.welcome-message h2 {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+}
 
 .welcome-message p {
+  font-size: 12px;
   text-align: left;
   padding: 7px;
 }
 
-a {
-  text-decoration: none;
+.welcome-grp {
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+  color: white;
+  margin-bottom: 20px;
+}
+ 
+.welcome-message {
+   background-color: rgba(245, 245, 245, 0.034);
+   border: 2px solid whitesmoke;
+   padding-left: 2%;
+   padding-right: 2%;
 }
 
+@media all and (min-width: 600px) {
+  .welcome-message {
+    margin: 20px 15%;
+    padding: 10px;
+  }
 
-/*-- pictures --- */
+  .welcome-message h2 {
+    font-size: 32px;
+  }
+  .welcome-message p {
+    font-size: 14px;
+  }
+}
+/*--------- WELCOME GRP STYLE END ----------*/
 
-.hero-img img {
-  width: 100%;
-  height: auto;
+/*-- ACCOMODATIONS / ACTIVITIES STYLE START --*/
+
+.accomodations-item p {
+  color: white;
+  font-weight: lighter;
+  font-size: 25px;
+  text-align: center;
+}
+.accomodations-grp {
+  display: flex; 
+  flex-direction: column;
+  border: 2px solid red;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.accomodations-item {
+  flex: 1;
+  cursor: pointer;
+}
+
+.accomodations-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .bedrooms-img {
+  height: 250px;
   width: 100%;
   background: url(assets/images/interior/master1.png) no-repeat center center;
   background-size: cover;
 }
     
 .activities-img {
+  height: 250px;
   width: 100%;
   background: url(assets/images/dock-water/boysPlaying-inWater.jpeg)no-repeat center center;
   background-size: cover;
 }
 
 .area-img {
+  height: 250px;
   width: 100%;
   background: url(assets/images/dock-water/arial-wideshot-surroudingTrees.jpeg) no-repeat center center;
   background-size: cover;
 }
 
-/*-------- Flexbox Modifier Styles --------*/
+@media all and (min-width: 600px) {
+  .accomodations-grp {
+    margin: 10px 15%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .accomodations-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+  }
 
-nav ul {
-  list-style: none;
+  .accomodations-item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+/*-- ACCOMODATIONS / ACTIVITIES STYLE END --*/
+
+
+/*-------- COTTAGE DETAILS STYLE START ----*/
+.cottage-details {
+  text-align: center;
+  border: 2px solid blue;
+  margin: 20px 5% 40px 5%;
+}
+
+@media all and (min-width: 600px) {
+  .cottage-details {
+    margin: 20px 15% 40px 15%;
+  }
+}
+/*------ COTTAGE DETAILS STYLE END -------*/
+
+
+/*-- PIC GALLERY STYLE START --*/
+.pic-gallery {
+  text-align: center;
+  border: 2px solid red;
+  margin: 20px 5% 40px 5%;
+}
+
+@media all and (min-width: 600px) {
+  .pic-gallery {
+    margin: 20px 15% 40px 15%
+  }
+}
+/*-- PIC GALLERY STYLE END --*/
+
+/* ------- RATE INFORMATION STYLE START ----- */
+.rates h2 {
+  font-size: 18px;
+  font-weight: lighter;
+  margin:0;
+}
+
+.season-title h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.season-price-details p, .extra-fees-details p {
+  font-size: 12px;
+}
+
+.rates{
+  /* --- Outer Most Container ----*/
+  margin: 20px 8%;
+  border: 2px solid red;
+}
+
+.catagory-title {
+  /* ---- Section Title Div ----*/
+  border-bottom: 1px solid darkslategray;
+  text-align: center;
+}
+
+.price-seasons-grp {
+  /*--- Parent Container for each Season ----*/
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.welcome-grp {
-  display: flex; 
   flex-direction: column;
+  margin-top: 20px;
 }
 
-.welcome-item {
+.season-detail-item {
+  /* --- container div for season title and details ---*/
   flex: 1;
-  margin:10px; 
-  display: flex;
-  flex-direction: column;
-}
-
-.welcome-message {
-  color: whitesmoke;
-  flex: 1;
-  background-color: rgba(245, 245, 245, 0.034);
-  border: 2px solid whitesmoke;
-}
-
-.welcome-item-detail {
-  color: whitesmoke;
-  height: 200px;
-  margin-bottom: 10px;
-  background-color: rgba(245, 245, 245, 0.082);
-  border: 2px solid whitesmoke;
-}
-
-.accomodations-grp {
-  display: flex; 
-  flex-direction: column;
-  height: 500px;
-}
-
-.accomodations-item {
-  margin: 0 0 5px 0;
-  flex: 1;
-  background-color: whitesmoke;
+  margin-bottom: 15px;
   
 }
 
-
-
-.item-double {
-  flex: 2;
-  margin: 10px;
+.season-title {
+  /*----Season Title Div ----*/
+  border-bottom: 1px solid darkslategray;
+  text-align: center;
 }
 
-
-/* Contact Form Design */
-
-form label {
-  display: block;
-  font-family: 'Work Sans', sans-serif;
+.extra-fees {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(94, 94, 94);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-form input, 
-form textarea {
+.extra-fees-title {
+  margin-right: 5px;
+}
+
+.extra-fees-details {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.extra-fees-details p {
+  flex: 1;
+  margin: 2px 0 0 5px;
+}
+
+/*-- Media Queries --*/
+@media all and (min-width: 600px) {
+  .rates {
+    margin: 20px 15%;  
+  }
+  
+  .rates h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .rates h4 {
+    font-size: 18px;
+  }
+  .rates p {
+    font-size: 16px;
+  }
+
+  .catagory-title {
+    text-align: left;
+  }
+
+  .season-title {
+    text-align: left;
+  }
+
+  .price-seasons-grp {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .season-detail-item {
+    flex: 1;
+    margin-top: 20px;
+  }
+
+  .extra-fees-title {
+    padding-right: 10px;
+  }
+
+  .extra-fees-title h4 {
+    margin: 0;
+  }
+
+  .extra-fees-details {
+    flex-direction: row;
+  }
+
+  .season-detail-item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+/*------- RATE INFORMATION STYLE END ------- */
+
+
+/*---------- CONTACT FORM STYLE START --------*/
+.contact-form h3{
+  margin: 0;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+.contact-form {
+  height: 600px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
   margin-bottom: 20px;
 }
 
-form textarea {
-  height: 160px;
+.form-grp {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 12px;
 }
 
-.submit-btn {
-  padding: 10px 20px 10px 20px;
-
+.form-grp input, .form-grp textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
 }
+
+textarea {
+  resize: vertical;
+}
+
+.form-style {
+  border: none;
+  outline: none;
+}
+
+button[type='submit'] {
+  width: 100%;
+  border: 1px solid white;
+  outline: none;
+  padding: 15px;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  transition: .3s ease background-color;
+}
+
+button[type='submit']:hover {
+  background-color: rgb(119, 117, 117);
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#status.success {
+  background-color: rgb(107, 233, 107);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: rgb(241, 96, 70);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media all and (min-width: 600px) {
+  button[type='submit'] {
+    width: 50%;
+  }
+
+  .contact {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+/*---------- CONTACT FORM STYLE END ----------*/
+
+
 
 /* ----MEDIA QUERY --------------------------------*/
 
-@media all and (min-width: 600px) {
-  section {
-    margin-left: 5%;
-    margin-right: 5%;
-
-  }
-  .accomodations-grp {
-    display: flex; 
-    flex-direction: row;
-    height: 250px;
-
-  }
-
-  .accomodations-item {
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .welcome-grp {
-    display: flex; 
-    flex-direction: row;
-  }
-}
