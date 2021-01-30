@@ -7,13 +7,26 @@ function handleMenuBtn () {
 $(handleMenuBtn);
 //----- function for menu hide/display END ----//
 
+// -----FUNCTION TO TEST WINDOW SIZE START ---- //
+
+let width = $(window).width();
+
+function handleNavMenu() {
+  if (width > 601) {
+    $('#menu-btn').addClass('hide');
+  } else {
+   // $('#menu-options').toggleClass('hide');
+  }
+}
+$(handleNavMenu);
+// -----FUNCTION TO TEST WINDOW SIZE END ------ //
 
 //---- IMG Slider/Carousel Functions START ------ //
 let counter= 1;
 setInterval(function() {
   document.getElementById('radio' + counter).checked = true;
   counter++;
-  if (counter > 8) {
+  if (counter > 6) {
     counter = 1
   }
 }, 3000)
