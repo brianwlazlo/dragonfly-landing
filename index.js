@@ -1,13 +1,25 @@
 //----- function for menu hide/display START ----//
 function handleMenuBtn () {
   $('#menu-btn').click(function() {
-    console.log('menu button click');
     $('#menu-options').slideToggle()
   })
 }
 $(handleMenuBtn);
 //----- function for menu hide/display END ----//
 
+// ---- function to diplay menu for larger screens START ----//
+
+let windowWidth = $(window).width();
+
+function displayNav() {
+  if (windowWidth >= 600) {
+    $('#menu-btn').addClass('hide');
+    $('#menu-options').removeClass('hide');
+  }
+}
+
+$(displayNav);
+// ---- function to diplay menu for larger screens END ----//
 
 //---- IMG Slider/Carousel Functions START ------ //
 let counter= 1;

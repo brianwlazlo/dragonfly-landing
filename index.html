@@ -11,15 +11,16 @@
 <body>
   
   <header>
-    <h1>DRAGONFLY LANDING MAINE</h1>
-    <h3>North Belgrade, ME</h3>
+    <div class="title">
+      <h1>DRAGONFLY LANDING MAINE</h1>
+      <h3>North Belgrade, ME</h3>
+    </div>
   </header>
 
   <nav>
     <button type="button" id='menu-btn' class='menu-btn'>Menu</button>
-      <div id='menu-options' class='menu-options'>
+      <div id='menu-options' class='menu-options hide'>
         <ul>
-          <li><a href="#welcome">About Us</a></li>
           <li><a href="#accomodations">Accomodations</a></li>
           <li><a href="#activities">Activities</a></li>
           <li><a href="#surrounding-area">Surrounding Area</a></li>
@@ -28,9 +29,9 @@
           <li><a href="#contact-form">Contact Us</a></li>
         </ul>
       </div>
-    
   </nav>
 
+  
   <main>
     <!--image slider start-->
     <div class='container'>
@@ -47,22 +48,22 @@
 
           <!-- slide images start -->
           <div class='slide first'>
-            <img src="assets/images/exterior/sunny-front-yard-lookingEast-southsideofHouse.png" alt="">
+            <img src="assets/images/exterior/sunny-front-yard-lookingEast-southsideofHouse.png" alt="Exterior of beige house with red roof and white trim">
           </div>
           <div class='slide'>
-            <img src="assets/images/interior/kitchen-withFoldingTable.JPG" alt="">
+            <img src="assets/images/interior/kitchen-withFoldingTable.JPG" alt="Sunny kitchen with white cabinets, steel applicances">
           </div>
           <div class='slide'>
-            <img src="assets/images/interior/livingRoom-kayakPaddlesOverSofa.jpeg" alt="">
+            <img src="assets/images/interior/livingRoom-kayakPaddlesOverSofa.jpeg" alt="Living Room with fireplace">
           </div>
           <div class='slide'>
-            <img src="assets/images/interior/master2-windows-sunny.png" alt="">
+            <img src="assets/images/interior/master2-windows-sunny.png" alt="Sunny Master bedroom with knotty pine walls">
           </div>
           <div class='slide'>
-            <img src="assets/images/exterior/sunny-backyard-towardsHouse-backdeck.png" alt="">
+            <img src="assets/images/exterior/sunny-backyard-towardsHouse-backdeck.png" alt="Sunny exterior shot from backyard looking towards the house">
           </div>
           <div class='slide'>
-            <img src="assets/images/dock-water/sunset-dockChairsForeground.jpeg" alt="">
+            <img src="assets/images/dock-water/sunset-dockChairsForeground.jpeg" alt="Orange sunset over the river with three adirondack chairs on the dock">
           </div>
           <!-- slide images end -->
 
@@ -137,13 +138,15 @@
         </div>
     </section>
 
-    <div id="cottage-details" class="cottage-details">
-      <p>Details about accomodations OR activities OR surrounding area show here</p>
+    <div id="cottage-details-container" class="cottage-details-container">
+      <div class="cottage-details" id="cottage-details">
+        <p>Details about accomodations OR activities OR surrounding area show here</p>
+      </div>
     </div>
 
     <!-- PICTURE GALLERY -->
     <section id='pic-gallery' class='pic-gallery'>
-      <div class="galler-container">
+      <div class="gallery-container">
         <p>Pictures Gallery goes here</p>
       </div>
     </section>
