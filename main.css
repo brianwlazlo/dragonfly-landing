@@ -273,13 +273,13 @@ h4 {
 
 /*--------- WELCOME GRP STYLE START --------*/
 .welcome-message h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: lighter;
   text-align: center;
 }
 
 .welcome-message p {
-  font-size: 12px;
+  font-size: 16px;
   text-align: left;
   padding: 7px;
 }
