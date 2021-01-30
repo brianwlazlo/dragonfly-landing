@@ -1,6 +1,16 @@
+//----- function for menu hide/display START ----//
+function handleMenuBtn () {
+  $('#menu-btn').click(function() {
+    console.log('menu button click');
+    $('#menu-options').slideToggle()
+  })
+}
+$(handleMenuBtn);
+//----- function for menu hide/display END ----//
+
+
+//---- IMG Slider/Carousel Functions START ------ //
 let counter= 1;
-
-
 setInterval(function() {
   document.getElementById('radio' + counter).checked = true;
   counter++;
@@ -23,9 +33,10 @@ function handleNavBtn () {
 };
  
 $(handleNavBtn);
+//---- IMG Slider/Carousel Functions END ------ //
 
 
-// function to handle form submission
+// ---- FORM SUBMISSION FUNCTION START -------- //
 window.addEventListener("DOMContentLoaded", function() {
 
   // get the form elements defined in your form HTML above
@@ -73,8 +84,8 @@ function ajax(method, url, data, success, error) {
   };
   xhr.send(data);
 }
+// ---- FORM SUBMISSION FUNCTION START -------- //
 
-// function to handle navigation hide/display
 
 
-// function to handle img carousel
+
