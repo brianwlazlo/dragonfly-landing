@@ -417,18 +417,18 @@ h4 {
 
 /* ------- RATE INFORMATION STYLE START ----- */
 .rates h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: lighter;
   margin:0;
 }
 
 .season-title h4 {
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .season-price-details p, .extra-fees-details p {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .rates{
