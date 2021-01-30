@@ -252,12 +252,16 @@ li:hover {
 h4 {
   font-size: 14px;
   color: darkslategray;
+  margin: 0 0 10px 0;
+  padding-top: 15px;
 }
 
 .stats-type {
   font-size: 28px;
   font-weight: bolder;
   color: darkslategray;
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 @media all and (min-width: 600px) {
