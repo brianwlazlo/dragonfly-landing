@@ -1,25 +1,10 @@
-//----- function for menu hide/display START ----//
+
 function handleMenuBtn () {
   $('#menu-btn').click(function() {
-    $('#menu-options').slideToggle()
+    $('nav').slideToggle()
   })
 }
 $(handleMenuBtn);
-//----- function for menu hide/display END ----//
-
-// -----FUNCTION TO TEST WINDOW SIZE START ---- //
-
-let width = $(window).width();
-
-function handleNavMenu() {
-  if (width > 601) {
-    $('#menu-btn').addClass('hide');
-  } else {
-   // $('#menu-options').toggleClass('hide');
-  }
-}
-$(handleNavMenu);
-// -----FUNCTION TO TEST WINDOW SIZE END ------ //
 
 //---- IMG Slider/Carousel Functions START ------ //
 let counter= 1;
