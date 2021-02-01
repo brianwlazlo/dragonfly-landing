@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* -------  General Styles ------- */
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color: rgb(94, 94, 94);
+}
+
+/* ---- RATE INFORMATION STYLINGv1 START ----- */
+/*----- TEXT -----*/
+.rates h2 {
+  font-size: 18px;
+  font-weight: lighter;
+  margin:0;
+}
+
+.season-title h4 {
+  margin: 0;
+}
+
+.rates{
+  /* --- Outer Most Container ----*/
+  margin: 20px 5%;
+}
+
+.catagory-title {
+  /* ---- Section Title Div ----*/
+  border-bottom: 1px solid darkslategray;
+  text-align: center;
+}
+
+.price-seasons-grp {
+  /*--- Parent Container for each Season ----*/
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.season-detail-item {
+  /* --- container div for season title and details ---*/
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.season-detail-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.season-title {
+  /*----Season Title Div ----*/
+  border-bottom: 1px solid darkslategray;
+  text-align: center;
+}
+
+.season-price-details {
+  /* --- seasonal price details div ---*/ 
+}
+
+.extra-fees {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(94, 94, 94);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.extra-fees-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.extra-fees-details p {
+  flex: 1;
+  margin: 2px 0 0 5px;
+}
+
+/*----- Media Queries ------*/
+
+@media all and (min-width: 600px) {
+  .price-seasons-grp {
+    flex-direction: row;
+  }
+
+  .extra-fees {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .extra-fees-titel {
+    padding-left: 10px;
+  }
+  .extra-fees-details {
+    flex-direction: row;
+    margin-left: 20px;
+  }
+
+  .season-detail-item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .rates h2 {
+    font-size: 24px;
+  }
+
+  .catagory-title {
+    text-align: left;
+  }
+
+  .season-title {
+    text-align: left;
+  }
+}
+
+/* ---- RATE INFORMATION STYLINGv1 END ----- */

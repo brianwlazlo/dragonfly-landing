@@ -1,0 +1,111 @@
+/* ------- RATE INFORMATION STYLEv2 START ----- */
+.rates h2 {
+  font-size: 18px;
+  font-weight: lighter;
+  margin:0;
+}
+
+.season-title h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.season-price-details p, .extra-fees-details p {
+  font-size: 10px;
+}
+
+.rates{
+  /* --- Outer Most Container ----*/
+  margin: 20px 5%;
+  border: 2px solid red;
+}
+
+.catagory-title {
+  /* ---- Section Title Div ----*/
+  border: 1px solid green;
+  border-bottom: 1px solid darkslategray;
+  text-align: center;
+}
+
+.price-seasons-grp {
+  /*--- Parent Container for each Season ----*/
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: 1px solid blue;
+}
+
+.season-detail-item {
+  /* --- container div for season title and details ---*/
+  flex: 1;
+  margin-bottom: 15px;
+  border: 1px solid green;
+}
+
+.season-title {
+  /*----Season Title Div ----*/
+  border-bottom: 1px solid darkslategray;
+  text-align: center;
+}
+
+.extra-fees {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(94, 94, 94);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.extra-fees-title {
+  margin-right: 5px;
+}
+
+.extra-fees-details {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.extra-fees-details p {
+  flex: 1;
+  margin: 2px 0 0 5px;
+}
+
+/*-- Media Queries --*/
+@media all and (min-width: 600px) {
+  .rates h2 {
+    font-size: 24px;
+  }
+
+  .catagory-title {
+    text-align: left;
+  }
+
+  .season-title {
+    text-align: left;
+  }
+
+  .price-seasons-grp {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .season-detail-item {
+    flex: 1;
+    margin-top: 20px;
+  }
+
+  .extra-fees-title {
+    padding-left: 10px;
+  }
+  .extra-fees-details {
+    flex-direction: row;
+  }
+
+  .season-detail-item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+ 
+}
+/*------- RATE INFORMATION STYLEv2 END ------- */

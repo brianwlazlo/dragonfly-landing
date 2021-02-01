@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* -------  General Styles ------- */
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color: darkslategray;
+  background-color: rgb(250, 246, 246);
+}
+
+/* ----- Rate Information Tiles ----*/
+.prices {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.price-seasons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 0;
+}
+
+.price-seasons-item {
+  flex:1;
+  border: 2px solid darkslategray;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.margin-right {
+  margin-right: 0;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  background-color: darkslategray;
+  color: whitesmoke;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 10px 0;
+}
+
+.price-content {
+  padding: 0 10px;
+}
+
+.extra-charges {
+  border: 2px solid darkslategray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media all and (min-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .price-seasons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0;
+  }
+  
+  .extra-charges {
+    margin-left: 35%;
+    margin-right: 35%
+  }
+
+  .margin-right {
+    margin-right: 10px;
+  }
+
+}

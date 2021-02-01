@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section>
+    <div class="form-container">
+      <form action="https://formspree.io/f/xjvpldrk" method="POST" id='contact-form'>
+
+        <div class="form-grp">
+          <label for='user-name'></label>
+          <input id="user-name" type="text" name="name" placeholder='Name' class='form-style'>
+        </div>
+
+        <div class="form-grp">
+          <label for="user-email"></label>
+          <input id="user-email" type="text" name="email" placeholder='Email' class='form-style'>
+        </div>  
+
+        <div class="form-grp">
+          <label for="user-message"></label>
+          <input id="user-message" name="message" type='text' placeholder='Message' class='form-style'></input>
+        </div>
+
+        <button type="submit" id='form-btn'>Submit</button>
+      
+      </form>
+    </div>
+
+    <div id="status"></div>
+  </section>
+
+
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src='index.js'></script>
+</body>
+</html>
