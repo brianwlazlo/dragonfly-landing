@@ -127,15 +127,3 @@ rightBtn.addEventListener('mouseleave', stopMovement);
   }
 })();
 
-/*
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg'
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/car.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/city.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/deer.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/flowers.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg',
-*/

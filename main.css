@@ -544,24 +544,11 @@ h4 {
 /*-- ACCOMODATIONS / ACTIVITIES STYLE END --*/
 
 
-/*-- PIC GALLERY STYLE START --*/
+/*------- PIC GALLERY STYLE START ---------*/
 .pic-gallery {
   text-align: center;
-  border: 2px solid red;
-  margin: 20px 5% 40px 5%;
 }
-
-@media all and (min-width: 600px) {
-  .pic-gallery {
-    margin: 20px 15% 40px 15%;
-    display: flex;
-    justify-content: center;
-  }
-  .gallery-container {
-    max-width: 1000px;
-  }
-}
-/*-- PIC GALLERY STYLE END --*/
+/*---------- PIC GALLERY STYLE END -----------*/
 
 /* ------- RATE INFORMATION STYLE START ----- */
 .price-information {
@@ -808,7 +795,4 @@ button[type='submit']:hover {
 }
 /*---------- CONTACT FORM STYLE END ----------*/
 
-
-
-/* ----MEDIA QUERY --------------------------------*/
 

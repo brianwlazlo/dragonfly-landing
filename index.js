@@ -33,6 +33,11 @@ $(handleNavBtn);
 //---- IMG Slider/Carousel Functions END ------ //
 
 
+//------- PIC GALLERY FUNCTIONS START ----------//
+
+//------- PIC GALLERY FUNCTIONS END ----------//
+
+
 // ---- FORM SUBMISSION FUNCTION START -------- //
 window.addEventListener("DOMContentLoaded", function() {
 
