@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;  
+}
+
+.fine-print {
+  margin: 20px 5%;
+}
+
+.title {
+  border-bottom: 1px solid darkslategray;
+}
+
+.fine-print ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+}
+
+.fine-print li {
+  padding: 5px;
+  margin:0;
+  font-size: 12px; 
+}
+
+
+
+@media all and (min-width: 600px) {
+  .fine-print li {
+    font-size: 16px;
+  }
+
+  .fine-print {
+    margin: 20px 15%;
+  }
+
+}

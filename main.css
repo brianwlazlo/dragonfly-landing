@@ -56,6 +56,7 @@ header h1, header h3 {
 .color-text {color: darkslategray;}
 
 
+
 /*---------  NAVIGATION STYLE START -------------*/
 nav {
   padding: 10px 0 10px 0;
@@ -86,7 +87,7 @@ a:hover {color: whitesmoke;}
 .menu-bar {
   width: 35px;
   height: 5px;
-  background-color: rgba(253, 253, 253, 0.5);
+  background-color: rgba(253, 253, 253, 0.705);
   margin:6px 0;
   border-radius: 5px;
 }
@@ -398,13 +399,13 @@ h4 {
 }
 
 .bdrm-content h4 {
-  font-size: 10px;
+  font-size: 14px;
   margin: 0;
   padding:0;
 }
 
 .bdrm-content p {
-  font-size: 8px;
+  font-size: 10px;
   margin:0;
 }
 
@@ -430,7 +431,7 @@ h4 {
   padding:10px 10px;
   border: solid 1px lightslategray;
   border-radius: 5px;
-  min-width: 100px;
+  min-width: 120px;
 }
 
 .bdrm-content:not(:last-child) {
@@ -438,8 +439,8 @@ h4 {
 }
 
 .bdrm-content img {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 
 .citation {
@@ -453,11 +454,10 @@ h4 {
     margin-right: 15%;
     display: flex;
     justify-content: center;
-    border: 2px solid red;
+    
   }
 
   .bdrm-arrangements {
-    
     align-self: center;
   }
 
@@ -526,7 +526,7 @@ h4 {
     margin: 20px 15%;
     display: flex;
     justify-content: center;
-    border: 2px solid red;
+    
   }
 
   .amenities, .activities {
@@ -547,6 +547,13 @@ h4 {
 /*------- PIC GALLERY STYLE START ---------*/
 .pic-gallery {
   text-align: center;
+  border: 2px solid red;
+  margin: 20px 15%;
+  height: 600px;
+}
+
+.pic-gallery h2 {
+  margin-top: 20%;
 }
 /*---------- PIC GALLERY STYLE END -----------*/
 
@@ -559,7 +566,6 @@ h4 {
 .rates h2 {
   font-size: 20px;
   font-weight: lighter;
-  margin:0;
 }
 
 .season-title h4 {
@@ -622,7 +628,6 @@ h4 {
     margin: 20px 15% 60px 15%;
     display: flex;
     justify-content: center;
-    border: 2px solid red;
   }
   
   .rates h2 {
@@ -669,6 +674,37 @@ h4 {
 }
 /*------- RATE INFORMATION STYLE END ------- */
 
+/*---------- FINE PRINT STYLE START --------*/
+.fine-print {
+  margin: 20px 5%;
+}
+
+.title {
+  border-bottom: 1px solid darkslategray;
+}
+
+.fine-print ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+}
+
+.fine-print li {
+  padding: 5px;
+  margin:0;
+  font-size: 12px; 
+}
+
+@media all and (min-width: 600px) {
+  .fine-print li {
+    font-size: 16px;
+  }
+
+  .fine-print {
+    margin: 20px 15% 100px 15%;
+  }
+}
+
+/*---------- FINE PRINT STYLE END --------*/
 
 /*---------- CONTACT FORM STYLE START --------*/
 .contact-form h3{
