@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -245,7 +246,6 @@ li:hover {
 .navigation-auto {
   position: absolute;
   display: flex;
-  /*width: 800px;*/
   width: 100%;
   justify-content: center;
   margin-top: 58%;
@@ -291,7 +291,6 @@ li:hover {
   .slider .left-slide {left: 10px;}
   .slider .right-slide {right: 10px;}
 }
-
 /* ------- SLIDE SHOW STYLE END ------------- */
 
 /*--------- STATS BAR STYLE START ------------*/
