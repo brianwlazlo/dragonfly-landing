@@ -46,7 +46,7 @@ header h1, header h3 {
 
 /* --- PRIMARY COLOR CONTROL ---*/
 
-.welcome-grp, .menu-btn, nav li:hover, .contact-form {
+.welcome-grp, nav li:hover, .contact-form {
   background-color: darkslategray;
 }
 
@@ -385,99 +385,164 @@ h4 {
   }
   .welcome-message p {
     font-size: 14px;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 }
 /*--------- WELCOME GRP STYLE END ----------*/
 
-/*-- ACCOMODATIONS / ACTIVITIES STYLE START --*/
-
-.accomodations-item p {
-  color: white;
-  font-weight: lighter;
-  font-size: 25px;
+/*--- SLEEPING ARRANGEMENTS START ----------*/
+.bdrm-arrangements-container h2 {
   text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
 }
-.accomodations-grp {
-  display: flex; 
+
+.bdrm-content h4 {
+  font-size: 10px;
+  margin: 0;
+  padding:0;
+}
+
+.bdrm-content p {
+  font-size: 8px;
+  margin:0;
+}
+
+.bdrm-arrangements-container {
+  display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.accomodations-item {
-  flex: 1;
-  cursor: pointer;
+.title {
+  border-bottom: 1px solid lightslategray;
 }
 
-.accomodations-item:not(:last-child) {
-  margin-bottom: 10px;
+.bedrooms {
+  margin-top: 30px;
+  display: flex;
+  overflow-y: hidden;
 }
 
-.bedrooms-img {
-  height: 250px;
-  width: 100%;
-  background: url(assets/images/interior/master1.png) no-repeat center center;
-  background-size: cover;
-}
-    
-.activities-img {
-  height: 250px;
-  width: 100%;
-  background: url(assets/images/dock-water/boysPlaying-inWater.jpeg)no-repeat center center;
-  background-size: cover;
+.bdrm-content {
+  padding:10px 10px;
+  border: solid 1px lightslategray;
+  border-radius: 5px;
+  min-width: 100px;
 }
 
-.area-img {
-  height: 250px;
-  width: 100%;
-  background: url(assets/images/dock-water/arial-wideshot-surroudingTrees.jpeg) no-repeat center center;
-  background-size: cover;
+.bdrm-content:not(:last-child) {
+  margin-right: 10px;
+}
+
+.bdrm-content img {
+  height: 20px;
+  width: 20px;
+}
+
+.citation {
+  margin-top: 25px;
+  font-size: 8px;
 }
 
 @media all and (min-width: 600px) {
-  .accomodations-grp {
-    margin: 10px 15%;
-    display: flex; 
-    flex-direction: row;
+  .bdrm-arrangements-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
     justify-content: center;
+    border: 2px solid red;
+  }
+
+  .bdrm-arrangements {
     
+    align-self: center;
+  }
+
+  .bdrm-arrangements-container h2 {
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .bdrm-content h4 {
+    font-size: 16px;
   }
   
-  .accomodations-item {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 5px;
-    max-width: 333px;
+  .bdrm-content p {
+    font-size: 14px;
   }
 
-  .accomodations-item:not(:last-child) {
-    margin-right: 15px;
+  .bdrm-content img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .bdrm-content {
+    min-width: 150px;
   }
 }
-/*-- ACCOMODATIONS / ACTIVITIES STYLE END --*/
+/*--- SLEEPING ARRANGEMENTS END ----------*/
 
+/*-- ACCOMODATIONS / ACTIVITIES STYLE START --*/
+.house-details {
+  margin: 20px 5% 60px 5%;
+}
 
-/*-------- COTTAGE DETAILS STYLE START ----*/
-.cottage-details-container {
+.title {
+  border-bottom: 1px solid lightslategray;
+  padding-top: 20px;
+}
+
+.title h2 {
   text-align: center;
-  border: 2px solid blue;
-  margin: 20px 5% 40px 5%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.amenities-list ul, .activities-list ul, .safety-list ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+}
+
+.amenities-list li, .activities-list li, .safety-list li {
+  font-size: 16px;
+  margin:0;
+  padding: 5px;
 }
 
 @media all and (min-width: 600px) {
-  .cottage-details-container {
-    margin: 20px 15% 40px 15%;
-    display: flex;
-    justify-content: center;
+  .title h2 {
+    text-align: left;
+    font-size: 22px;
   }
 
-  .cottage-details {
-    max-width: 1000px;
+  .amenities-list li, .activities-list li, .safety-list li {
+    font-size: 16px;
   }
+
+  .house-details {
+    margin: 20px 15%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+  }
+
+  .amenities, .activities {
+    margin-right: 3%;
+  }
+
+  .amenities, .activities, .safety {
+    flex: 1;
+    max-width: 300px;
+    padding-right: 10px;
+  }
+
 }
-/*------ COTTAGE DETAILS STYLE END -------*/
+
+/*-- ACCOMODATIONS / ACTIVITIES STYLE END --*/
 
 
 /*-- PIC GALLERY STYLE START --*/
@@ -500,6 +565,10 @@ h4 {
 /*-- PIC GALLERY STYLE END --*/
 
 /* ------- RATE INFORMATION STYLE START ----- */
+.price-information {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .rates h2 {
   font-size: 20px;
   font-weight: lighter;
@@ -515,33 +584,23 @@ h4 {
   font-size: 16px;
 }
 
-.rates{
-  /* --- Outer Most Container ----*/
-  margin: 20px 8%;
-}
-
 .catagory-title {
-  /* ---- Section Title Div ----*/
   border-bottom: 1px solid darkslategray;
   text-align: center;
 }
 
 .price-seasons-grp {
-  /*--- Parent Container for each Season ----*/
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
 
 .season-detail-item {
-  /* --- container div for season title and details ---*/
   flex: 1;
   margin-bottom: 15px;
-  
 }
 
 .season-title {
-  /*----Season Title Div ----*/
   border-bottom: 1px solid darkslategray;
   text-align: center;
 }
@@ -573,17 +632,15 @@ h4 {
 /*-- Media Queries --*/
 @media all and (min-width: 600px) {
   .price-information {
-      margin: 20px 15% 40px 15%;
-      display: flex;
-      justify-content: center;
-  }
-  .rates { 
-    max-width: 1000px;
+    margin: 20px 15% 60px 15%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
   }
   
   .rates h2 {
     font-size: 24px;
-    text-align: center;
+    text-align: left;
   }
 
   .rates h4 {
@@ -611,10 +668,6 @@ h4 {
     margin-top: 20px;
   }
 
-  .extra-fees-title {
-    padding-right: 10px;
-  }
-
   .extra-fees-title h4 {
     margin: 0;
   }
@@ -638,8 +691,14 @@ h4 {
   letter-spacing: 1px;
   font-weight: lighter;
 }
+label {
+  color: white;
+  font-size: 16px;
+}
+
 .contact-form {
-  height: 600px;
+  padding-top: 20px;
+  height: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -664,10 +723,11 @@ h4 {
 
 .form-grp input, .form-grp textarea {
   width: 100%;
-  padding: 5px;
-  font-size: 12px;
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  
 }
 
 textarea {
@@ -697,7 +757,7 @@ button[type='submit'] {
 }
 
 button[type='submit']:hover {
-  background-color: rgb(119, 117, 117);
+  background-color: rgba(255, 255, 255, 0.253);
 }
 
 #status {
