@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.img-carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.hero img {
+  height: 100%
+}
+
+
+.thumbnail {
+  display: inline-block;
+  cursor: pointer;
+  height: 60px;
+}
+
+a.thumbnail:hover {
+  box-shadow: 5px 5px 5px gray;
+}
+
+.thumbnail img {
+  max-height: 100%;
+}
