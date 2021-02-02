@@ -46,7 +46,7 @@ header h1, header h3 {
 
 /* --- PRIMARY COLOR CONTROL ---*/
 
-.welcome-grp, .menu-btn, nav li:hover, .contact-form {
+.welcome-grp, nav li:hover, .contact-form {
   background-color: darkslategray;
 }
 
@@ -638,8 +638,14 @@ h4 {
   letter-spacing: 1px;
   font-weight: lighter;
 }
+label {
+  color: white;
+  font-size: 16px;
+}
+
 .contact-form {
-  height: 600px;
+  padding-top: 20px;
+  height: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -664,10 +670,11 @@ h4 {
 
 .form-grp input, .form-grp textarea {
   width: 100%;
-  padding: 5px;
-  font-size: 12px;
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  
 }
 
 textarea {
@@ -697,7 +704,7 @@ button[type='submit'] {
 }
 
 button[type='submit']:hover {
-  background-color: rgb(119, 117, 117);
+  background-color: rgba(255, 255, 255, 0.253);
 }
 
 #status {

@@ -236,18 +236,18 @@
         <form action="https://formspree.io/f/xjvpldrk" method="POST" id='contact-form'>
   
           <div class="form-grp">
-            <label for='user-name'></label>
-            <input id="user-name" type="text" name="name" placeholder='Name' class='form-style'>
+            <label for='user-name'>Name:</label>
+            <input id="user-name" type="text" name="name" class='form-style' required>
           </div>
   
           <div class="form-grp">
-            <label for="user-email"></label>
-            <input id="user-email" type="text" name="email" placeholder='Email' class='form-style'>
+            <label for="user-email">Email:</label>
+            <input id="user-email" type="text" name="email" class='form-style' required>
           </div>  
   
           <div class="form-grp">
-            <label for="user-message"></label>
-            <textarea id="user-message" name="message" type='text' placeholder='Message' rows='10' class='form-style'></textarea>
+            <label for="user-message">Message:</label>
+            <textarea id="user-message" name="message" type='text' rows='10' class='form-style' required></textarea>
           </div>
   
           <button type="submit" id='form-btn'>SUBMIT</button>
