@@ -391,95 +391,157 @@ h4 {
 }
 /*--------- WELCOME GRP STYLE END ----------*/
 
-/*-- ACCOMODATIONS / ACTIVITIES STYLE START --*/
-
-.accomodations-item p {
-  color: white;
-  font-weight: lighter;
-  font-size: 25px;
+/*--- SLEEPING ARRANGEMENTS START ----------*/
+.sleeping-arrangements h2 {
   text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
 }
-.accomodations-grp {
-  display: flex; 
+
+.bdrm-content h4 {
+  font-size: 10px;
+  margin: 0;
+  padding:0;
+}
+
+.bdrm-content p {
+  font-size: 8px;
+  margin:0;
+}
+
+.sleeping-arrangements {
+  display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.accomodations-item {
-  flex: 1;
-  cursor: pointer;
+.title {
+  border-bottom: 1px solid lightslategray;
 }
 
-.accomodations-item:not(:last-child) {
-  margin-bottom: 10px;
+.bedrooms {
+  margin-top: 30px;
+  display: flex;
+  overflow-y: hidden;
 }
 
-.bedrooms-img {
-  height: 250px;
-  width: 100%;
-  background: url(assets/images/interior/master1.png) no-repeat center center;
-  background-size: cover;
-}
-    
-.activities-img {
-  height: 250px;
-  width: 100%;
-  background: url(assets/images/dock-water/boysPlaying-inWater.jpeg)no-repeat center center;
-  background-size: cover;
+.bdrm-content {
+  padding:10px 10px;
+  border: solid 1px lightslategray;
+  border-radius: 5px;
+  min-width: 100px;
 }
 
-.area-img {
-  height: 250px;
-  width: 100%;
-  background: url(assets/images/dock-water/arial-wideshot-surroudingTrees.jpeg) no-repeat center center;
-  background-size: cover;
+.bdrm-content:not(:last-child) {
+  margin-right: 10px;
 }
 
-@media all and (min-width: 600px) {
-  .accomodations-grp {
-    margin: 10px 15%;
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    
-  }
-  
-  .accomodations-item {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 5px;
-    max-width: 333px;
-  }
-
-  .accomodations-item:not(:last-child) {
-    margin-right: 15px;
-  }
+.bdrm-content img {
+  height: 20px;
+  width: 20px;
 }
-/*-- ACCOMODATIONS / ACTIVITIES STYLE END --*/
 
-
-/*-------- COTTAGE DETAILS STYLE START ----*/
-.cottage-details-container {
-  text-align: center;
-  border: 2px solid blue;
-  margin: 20px 5% 40px 5%;
+.citation {
+  margin-top: 25px;
+  font-size: 8px;
 }
 
 @media all and (min-width: 600px) {
-  .cottage-details-container {
-    margin: 20px 15% 40px 15%;
-    display: flex;
+  .sleeping-arrangements {
+    margin-left: 15%;
+    margin-right: 15%;
     justify-content: center;
   }
 
-  .cottage-details {
+  .title, .bedrooms {
     max-width: 1000px;
   }
+
+  .sleeping-arrangements .title {
+    justify-content: center;
+  }
+
+  .sleeping-arrangements h2 {
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .bdrm-content h4 {
+    font-size: 16px;
+  }
+  
+  .bdrm-content p {
+    font-size: 14px;
+  }
+
+  .bdrm-content img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .bdrm-content {
+    min-width: 150px;
+  }
 }
-/*------ COTTAGE DETAILS STYLE END -------*/
+/*--- SLEEPING ARRANGEMENTS END ----------*/
+
+/*-- ACCOMODATIONS / ACTIVITIES STYLE START --*/
+.house-details {
+  margin: 20px 5%;
+}
+
+.title {
+  border-bottom: 1px solid lightslategray;
+  padding-top: 20px;
+}
+
+.title h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.amenities-list ul, .activities-list ul, .safety-list ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+}
+
+.amenities-list li, .activities-list li, .safety-list li {
+  font-size: 16px;
+  margin:0;
+  padding: 5px;
+}
+
+@media all and (min-width: 600px) {
+  .title h2 {
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .amenities-list li, .activities-list li, .safety-list li {
+    font-size: 16px;
+  }
+
+  .house-details {
+    margin: 20px 15%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .amenities, .activities {
+    margin-right: 10px;
+  }
+
+  .amenities, .activities, .safety {
+    flex: 1;
+    max-width: 300px;
+  }
+
+}
+
+/*-- ACCOMODATIONS / ACTIVITIES STYLE END --*/
 
 
 /*-- PIC GALLERY STYLE START --*/
