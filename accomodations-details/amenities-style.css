@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;  
+}
+
+.house-details {
+  margin: 20px 5%;
+}
+
+.title {
+  border-bottom: 1px solid lightslategray;
+  padding-top: 20px;
+}
+
+.title h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.amenities-list ul, .activities-list ul, .safety-list ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+}
+
+.amenities-list li, .activities-list li, .safety-list li {
+  font-size: 12px;
+  margin:0;
+  padding: 5px;
+}
+
+@media all and (min-width: 600px) {
+  .title h2 {
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .amenities-list li, .activities-list li, .safety-list li {
+    font-size: 16px;
+  }
+
+  .house-details {
+    margin: 20px 15%;
+  }
+
+  .title {
+    max-width: 1000px;
+  }
+}

@@ -385,6 +385,8 @@ h4 {
   }
   .welcome-message p {
     font-size: 14px;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 }
 /*--------- WELCOME GRP STYLE END ----------*/
@@ -583,7 +585,7 @@ h4 {
   
   .rates h2 {
     font-size: 24px;
-    text-align: center;
+    text-align: left;
   }
 
   .rates h4 {
