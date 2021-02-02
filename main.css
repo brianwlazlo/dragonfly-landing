@@ -392,7 +392,7 @@ h4 {
 /*--------- WELCOME GRP STYLE END ----------*/
 
 /*--- SLEEPING ARRANGEMENTS START ----------*/
-.sleeping-arrangements h2 {
+.bdrm-arrangements-container h2 {
   text-align: center;
   font-size: 18px;
   font-weight: lighter;
@@ -409,7 +409,7 @@ h4 {
   margin:0;
 }
 
-.sleeping-arrangements {
+.bdrm-arrangements-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -449,21 +449,20 @@ h4 {
 }
 
 @media all and (min-width: 600px) {
-  .sleeping-arrangements {
+  .bdrm-arrangements-container {
     margin-left: 15%;
     margin-right: 15%;
+    display: flex;
     justify-content: center;
+    border: 2px solid red;
   }
 
-  .title, .bedrooms {
-    max-width: 1000px;
+  .bdrm-arrangements {
+    
+    align-self: center;
   }
 
-  .sleeping-arrangements .title {
-    justify-content: center;
-  }
-
-  .sleeping-arrangements h2 {
+  .bdrm-arrangements-container h2 {
     text-align: left;
     font-size: 22px;
   }
@@ -489,7 +488,7 @@ h4 {
 
 /*-- ACCOMODATIONS / ACTIVITIES STYLE START --*/
 .house-details {
-  margin: 20px 5%;
+  margin: 20px 5% 60px 5%;
 }
 
 .title {
@@ -527,16 +526,18 @@ h4 {
   .house-details {
     margin: 20px 15%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    border: 2px solid red;
   }
 
   .amenities, .activities {
-    margin-right: 10px;
+    margin-right: 3%;
   }
 
   .amenities, .activities, .safety {
     flex: 1;
     max-width: 300px;
+    padding-right: 10px;
   }
 
 }
@@ -564,6 +565,10 @@ h4 {
 /*-- PIC GALLERY STYLE END --*/
 
 /* ------- RATE INFORMATION STYLE START ----- */
+.price-information {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .rates h2 {
   font-size: 20px;
   font-weight: lighter;
@@ -579,33 +584,23 @@ h4 {
   font-size: 16px;
 }
 
-.rates{
-  /* --- Outer Most Container ----*/
-  margin: 20px 8%;
-}
-
 .catagory-title {
-  /* ---- Section Title Div ----*/
   border-bottom: 1px solid darkslategray;
   text-align: center;
 }
 
 .price-seasons-grp {
-  /*--- Parent Container for each Season ----*/
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
 
 .season-detail-item {
-  /* --- container div for season title and details ---*/
   flex: 1;
   margin-bottom: 15px;
-  
 }
 
 .season-title {
-  /*----Season Title Div ----*/
   border-bottom: 1px solid darkslategray;
   text-align: center;
 }
@@ -637,12 +632,10 @@ h4 {
 /*-- Media Queries --*/
 @media all and (min-width: 600px) {
   .price-information {
-      margin: 20px 15% 40px 15%;
-      display: flex;
-      justify-content: center;
-  }
-  .rates { 
-    max-width: 1000px;
+    margin: 20px 15% 60px 15%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
   }
   
   .rates h2 {
@@ -673,10 +666,6 @@ h4 {
   .season-detail-item {
     flex: 1;
     margin-top: 20px;
-  }
-
-  .extra-fees-title {
-    padding-right: 10px;
   }
 
   .extra-fees-title h4 {
