@@ -69,16 +69,19 @@ body {
 .gallery-item.active { opacity: 1; }
 
 .controls {
-  font-size: 0;
+  font-size:0;
   border-top: none;
+  height: 60px;
 }
 .move-btn {
   display: inline-block;
+  font-size: 36px;
   width: 50%;
-  border: none;
-  color: #ccc;
-  background-color: transparent;
-  padding: 0.2em 1.5em;
+  height: 100%;
+  /*border: none;*/
+  color: rgb(255, 255, 255);
+  background-color: darkslategray;
+  /*padding: 0.2em 1.5em;*/
 }
 .move-btn:first-child {border-right: none;}
 .move-btn.left  { cursor: w-resize; }

@@ -86,25 +86,35 @@ function stopMovement() {
   clearInterval(rightInterval);
 }
 
-leftBtn.addEventListener('mouseenter', moveLeft);
+leftBtn.addEventListener('mouseenter', moveRight);
 leftBtn.addEventListener('mouseleave', stopMovement);
-rightBtn.addEventListener('mouseenter', moveRight);
+rightBtn.addEventListener('mouseenter', moveLeft);
 rightBtn.addEventListener('mouseleave', stopMovement);
 
 
 //Start this baby up
 (function init() {
   var images = [
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/car.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/city.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/deer.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/flowers.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg',
-    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg'
+    '../assets/images/interior/bedroom3-fullsizebd.jpeg',
+    '../assets/images/interior/bedroom2-singlebd.jpeg',
+    '../assets/images/interior/livingRoom-current.jpeg',
+    '../assets/images/interior/livingRoom-kayakPaddlesOverSofa.jpeg',
+    '../assets/images/interior/master1.png',
+    '..//assets/images/interior/bathroom-standupShower.jpeg',
+    '../assets/images/interior/bathroom2-slidingShowerDoor.png',
+    '../assets/images/interior/bedroom1-singlebd.jpeg',
+    '../assets/images/dock-water/brightSunReflection-overWaterandDock.jpeg',
+    '../assets/images/dock-water/fixedDockChairsWithTable-fromDock-towardsHouse.jpeg',
+    '../assets/images/dock-water/rainbow-over-waterAndDock.jpeg',
+    '../assets/images/dock-water/kayak-on-water-lookingAtHorizon.jpeg',
+    '../assets/images/dock-water/sunrise-threeDockCharisForeground.jpeg',
+    '../assets/images/dock-water/sunset-fromBackyard-towardsWater.jpeg',
+    '../assets/images/dock-water/treelineFromWater-fallColors.jpeg',
+    '../assets/images/exterior/backyard-fall-towardsHouse-sidewalk.jpeg',
+    '../assets/images/exterior/front-yard-looking-east-northsideofHouse.jpeg',
+    '../assets/images/exterior/arial-wideshot-HigherOverWater-towardsHouse.png',
+    '../assets/images/exterior/arial-wideshot-lookingdown-backyard-water-dock.png',
+    '../assets/images/signs/randomWay-streetSign.jpeg'
   ];
   
   //Set Initial Featured Image
@@ -116,3 +126,16 @@ rightBtn.addEventListener('mouseleave', stopMovement);
     galleryItems[i].addEventListener('click', selectItem);
   }
 })();
+
+/*
+    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg',
+    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg',
+    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg'
+    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/car.jpg',
+    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/city.jpg',
+    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/deer.jpg',
+    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/flowers.jpg',
+    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg',
+    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg',
+    'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg',
+*/
