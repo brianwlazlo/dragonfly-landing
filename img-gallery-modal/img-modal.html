@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="img-modal.css">
+  <title>img-modal</title>
+</head>
+<body>
+
+  <!-- Images used to open the lightbox -->
+  <div class="group">
+    <div class="item">
+      <img src="../assets/images/exterior/backyard-fall-towardsHouse-sidewalk.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="../assets/images/interior/kitchen-withFoldingTable.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="../assets/images/dock-water/fixedDockChairsWithTable-fromDock-towardsHouse.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="../assets/images/nature/dirtRoad-fallFoliage.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+  </div>
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="../assets/images/exterior/backyard-fall-towardsHouse-sidewalk.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="../assets/images/interior/kitchen-withFoldingTable.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="../assets/images/dock-water/fixedDockChairsWithTable-fromDock-towardsHouse.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="../assets/images/nature/dirtRoad-fallFoliage.jpeg"  style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="item-row">
+        <img class="demo" src="../assets/images/exterior/backyard-fall-towardsHouse-sidewalk.jpeg"onclick="currentSlide(1)" alt="Nature">
+      
+
+      
+        <img class="demo" src="../assets/images/interior/kitchen-withFoldingTable.JPG" onclick="currentSlide(2)" alt="Snow">
+      
+
+      
+        <img class="demo" src="../assets/images/dock-water/fixedDockChairsWithTable-fromDock-towardsHouse.jpeg" onclick="currentSlide(3)" alt="Mountains">
+      
+
+      
+        <img class="demo" src="../assets/images/nature/dirtRoad-fallFoliage.jpeg"  onclick="currentSlide(4)" alt="Lights">
+      
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src='img-modal.js'></script>
+</body>
+</html>
