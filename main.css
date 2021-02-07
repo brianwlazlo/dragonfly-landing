@@ -453,7 +453,6 @@ h4 {
     margin-right: 15%;
     display: flex;
     justify-content: center;
-    
   }
 
   .bdrm-arrangements {
@@ -545,7 +544,7 @@ h4 {
 
 /*------- PIC GALLERY STYLE START ---------*/
 
-.gallery {
+.gallery-container {
   display: flex;
   justify-content: center;
   overflow-y: scroll;
@@ -556,16 +555,31 @@ h4 {
 
 .gallery img {
   margin-right: 5px;
+  transition: 1s;
+  
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
 
 @media all and (min-width: 600px) {
-  .gallery {
+  .gallery-container {
     margin-left: 15%;
     margin-right: 15%;
-    display: flex;;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    border: solid 2px red;
+  }
+
+  .gallery {
+    padding: 0;
+    align-self: center;
     max-height: 600px;
-    max-width: 1400px;
+    max-width: 1040px;
+    border: 2px solid blue;
+    overflow-x: scroll;
   }
 }
 
