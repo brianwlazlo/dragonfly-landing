@@ -573,10 +573,6 @@ h4 {
   max-height: 230px;
 }
 
-.gallery img:hover {
-  transform: scale(1.1);
-}
-
 /*--- ipad screen size --- */
 
 @media all and (min-width: 601px) {
