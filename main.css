@@ -549,6 +549,8 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin:0;
+  padding: 0;
 }
 
 .picture-gallery .title {
@@ -559,37 +561,70 @@ h4 {
 .gallery-container {
   border: 2px solid orange;
   overflow-x: scroll;
+  margin: 0;
+  padding: 0;
 }
 
 .gallery {
   border: 2px solid blue;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .gallery img {
   margin-right: 5px;
   transition: 1s;
   border-radius: 8px;
+  max-width: 230px;
+  max-height: 230px;
 }
 
 .gallery img:hover {
   transform: scale(1.1);
 }
 
-@media all and (min-width: 600px) {
+/*--- ipad screen size --- */
+
+@media all and (min-width: 601px) {
   .picture-gallery {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
+  
   .picture-gallery .title {;
     border: 1px solid green;
   }
 
   .gallery-container {
     height: 600px;
-    margin-left: 5%;
-    margin-right: 5%;
-    
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery img {
+    max-width: 220px;
+    max-height: 220px;
+  }
+
+}
+
+@media all and (min-width: 900px) {
+  .picture-gallery {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  .picture-gallery .title {;
+    border: 1px solid green;
+  }
+
+  .gallery-container {
+    height: 600px;
   }
 
   .gallery {
