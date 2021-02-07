@@ -74,7 +74,7 @@ a:hover {color: whitesmoke;}
 
 .menu-btn {
   position: absolute;
-  left: 10px;
+  left: 20px;
   bottom: 10px;
   background: transparent;
 }
@@ -205,21 +205,33 @@ li:hover {
 .slider .left-slide, .slider .right-slide {
   position: absolute;
   height: 50px;
-  width: 60px;
-  background-color: #23252577;
+  width: 40px;
   color:rgb(241, 237, 237);
-  font-size: 20px;
+  font-size: 24px;
   top: 50%;
   margin-top: -20px;
   text-align: center;
-  line-height: 40px;
+  line-height: 20px;
+}
+
+.play-pause {
+  position: absolute;
+  color:white;
+  border: solid 1px white;
+  width: 60px;
+  font-size: 10px;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .left-slide:hover { cursor: pointer;}
 .right-slide:hover { cursor: pointer;}
 
-.slider .left-slide {left: -10px;}
-.slider .right-slide {right: -10px;}
+.slider .left-slide {left: -5px;}
+.slider .right-slide {right: -5px;}
 /* --- prev/next end ---- */
 
 .slides {
@@ -248,12 +260,12 @@ li:hover {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 58%;
+  bottom: 20px;
 }
 
 .navigation-auto div {
-  border: 2px solid whitesmoke;
-  padding: 5px;
+  border: 1px solid whitesmoke;
+  padding: 3px;
   border-radius: 10px;
 }
 
@@ -287,9 +299,22 @@ li:hover {
     height: 500px;
   }
 
-  .slider .left-slide, .slider .right-slide {font-size: 60px;}
+  .slider .left-slide, .slider .right-slide {font-size: 40px;}
   .slider .left-slide {left: 10px;}
   .slider .right-slide {right: 10px;}
+
+  .navigation-auto div {
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .play-pause {
+    width: 120px;
+    font-size: 14px;
+    padding: 5px;
+  }
+
 }
 /* ------- SLIDE SHOW STYLE END ------------- */
 
