@@ -63,6 +63,12 @@
 
           <!-- slide images start -->
           <div class='slide first'>
+            <img src="assets/images/dock-water/sunset-dockChairsForeground.jpeg" alt="Orange sunset over the river with three adirondack chairs on the dock">
+          </div>
+          <div class='slide'>
+            <img src="assets/images/dock-water/boyFishingOnKayak.jpeg" alt="boyFishingOnKayak">
+          </div>
+          <div class='slide'>
             <img src="assets/images/exterior/sunny-front-yard-lookingEast-southsideofHouse.png" alt="Exterior of beige house with red roof and white trim">
           </div>
           <div class='slide'>
@@ -72,13 +78,7 @@
             <img src="assets/images/interior/livingRoom-kayakPaddlesOverSofa.jpeg" alt="Living Room with fireplace">
           </div>
           <div class='slide'>
-            <img src="assets/images/interior/master2-windows-sunny.png" alt="Sunny Master bedroom with knotty pine walls">
-          </div>
-          <div class='slide'>
-            <img src="assets/images/exterior/sunny-backyard-towardsHouse-backdeck.png" alt="Sunny exterior shot from backyard looking towards the house">
-          </div>
-          <div class='slide'>
-            <img src="assets/images/dock-water/sunset-dockChairsForeground.jpeg" alt="Orange sunset over the river with three adirondack chairs on the dock">
+            <img src="assets/images/exterior/from-water-towardsHouse-dock-backyard.png" alt="from-water-towardsHouse-dock-backyard">
           </div>
           <!-- slide images end -->
 
@@ -270,13 +270,15 @@
           </div>
           <div class="activities-list">
             <ul>
+              <li>2 Kayaks</li>
+              <li>Paddle Boat</li>
+              <li>Hiking</li>
               <li>TV</li>
               <li>DVD Player</li>
               <li>DVD Library</li>
               <li>Books</li>
               <li>Board Games, Playing Cards</li>
-              <li>2 Kayaks</li>
-              <li>Paddle Boat</li>
+ 
             </ul>
           </div>
         </div>
@@ -352,7 +354,7 @@
             <h4>All Bookings Include:</h4>
           </div>
           <div class='extra-fees-details'>
-            <p>$120 Cleaning Fee</p>
+            <p>$200 Cleaning Fee</p>
             <p>$500 Security Deposit</p>
             <p>9.0% Tax</p>
           </div>
@@ -425,10 +427,25 @@
             <label for="user-email">Email:</label>
             <input id="user-email" type="text" name="email" class='form-style' required>
           </div>  
-  
+
+          <div class="form-grp">
+            <label for="guest-check-in">Check-In:</label>
+            <input id="guest-check-in" type="date" name="check-in" class='form-style' required>
+          </div> 
+
+          <div class="form-grp">
+            <label for="guest-check-out">Check-Out:</label>
+            <input id="guest-check-out" type="date" name="check-out" class='form-style' required>
+          </div>
+
+          <div class="form-grp">
+            <label for="number-of-guests">Number of Guests:</label>
+            <input id="number-of-guests" type="number" name="number-of-guests" class='form-style' required>
+          </div>
+
           <div class="form-grp">
             <label for="user-message">Message:</label>
-            <textarea id="user-message" name="message" type='text' rows='10' class='form-style' required></textarea>
+            <textarea id="user-message" name="message" type='text' rows='5' class='form-style' required></textarea>
           </div>
   
           <button type="submit" id='form-btn'>SUBMIT</button>
