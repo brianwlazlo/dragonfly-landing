@@ -7,6 +7,28 @@ $(handleMenuBtn);
 
 //---- IMG Slider/Carousel Functions START ------ //
 let counter= 1;
+
+function autoPlay() {
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if (counter > 6) {
+    counter = 1
+  }
+}
+
+function work () {
+  t = setInterval(autoPlay, 3000)
+}
+
+function handlePlayPause () {
+  $('.play-pause').click(function() {
+    console.log('button clicked');
+    clearInterval(t);
+  })
+}
+work();
+$(handlePlayPause);
+/*
 setInterval(function() {
   document.getElementById('radio' + counter).checked = true;
   counter++;
@@ -14,7 +36,7 @@ setInterval(function() {
     counter = 1
   }
 }, 3000)
-
+*/
 
 function handleNavBtn () {
   $('.left-slide').click(function(){
@@ -30,11 +52,6 @@ function handleNavBtn () {
  
 $(handleNavBtn);
 //---- IMG Slider/Carousel Functions END ------ //
-
-
-//------- PIC GALLERY FUNCTIONS START ----------//
-
-//------- PIC GALLERY FUNCTIONS END ----------//
 
 
 // ---- FORM SUBMISSION FUNCTION START -------- //

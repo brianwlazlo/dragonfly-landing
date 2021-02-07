@@ -214,6 +214,19 @@ li:hover {
   line-height: 20px;
 }
 
+.play-pause {
+  position: absolute;
+  color:white;
+  border: solid 1px white;
+  width: 60px;
+  font-size: 10px;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .left-slide:hover { cursor: pointer;}
 .right-slide:hover { cursor: pointer;}
 
@@ -294,6 +307,12 @@ li:hover {
     border: 1px solid whitesmoke;
     padding: 5px;
     border-radius: 10px;
+  }
+
+  .play-pause {
+    width: 120px;
+    font-size: 14px;
+    padding: 5px;
   }
 
 }
