@@ -56,7 +56,6 @@ header h1, header h3 {
 .color-text {color: darkslategray;}
 
 
-
 /*---------  NAVIGATION STYLE START -------------*/
 nav {
   padding: 10px 0 10px 0;
@@ -454,7 +453,6 @@ h4 {
     margin-right: 15%;
     display: flex;
     justify-content: center;
-    
   }
 
   .bdrm-arrangements {
@@ -545,15 +543,76 @@ h4 {
 
 
 /*------- PIC GALLERY STYLE START ---------*/
-.pic-gallery {
-  text-align: center;
-  border: 2px solid red;
-  margin: 20px 15%;
-  height: 600px;
+
+.picture-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.pic-gallery h2 {
-  margin-top: 20%;
+.picture-gallery .title {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.gallery-container {
+  overflow-x: scroll;
+  margin-top: 15px;
+}
+
+.gallery {
+  display: flex;
+}
+
+.gallery img {
+  margin-right: 5px;
+  transition: 1s;
+  border-radius: 8px;
+  max-width: 230px;
+  max-height: 230px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/*--- ipad screen size --- */
+
+@media all and (min-width: 601px) {
+  .picture-gallery {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .gallery-container {
+    height: 600px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery img {
+    max-width: 220px;
+    max-height: 220px;
+  }
+
+}
+
+/* -- larger screens ---*/
+@media all and (min-width: 900px) {
+  .picture-gallery {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  .gallery img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  
 }
 /*---------- PIC GALLERY STYLE END -----------*/
 

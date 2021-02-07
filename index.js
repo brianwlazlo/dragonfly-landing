@@ -1,4 +1,3 @@
-
 function handleMenuBtn () {
   $('#menu-btn').click(function() {
     $('nav').slideToggle()
@@ -86,8 +85,4 @@ function ajax(method, url, data, success, error) {
   };
   xhr.send(data);
 }
-// ---- FORM SUBMISSION FUNCTION START -------- //
-
-
-
-
+// ---- FORM SUBMISSION FUNCTION END -------- //
