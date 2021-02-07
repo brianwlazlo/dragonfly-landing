@@ -544,19 +544,32 @@ h4 {
 
 /*------- PIC GALLERY STYLE START ---------*/
 
-.gallery-container {
+.picture-gallery {
+  border: 2px solid red;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  overflow-y: scroll;
+}
+
+.picture-gallery .title {
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 40px;
+}
+
+.gallery-container {
+  border: 2px solid orange;
+  overflow-x: scroll;
+}
+
+.gallery {
+  border: 2px solid blue;
+  display: flex;
 }
 
 .gallery img {
   margin-right: 5px;
   transition: 1s;
-  
+  border-radius: 8px;
 }
 
 .gallery img:hover {
@@ -564,23 +577,27 @@ h4 {
 }
 
 @media all and (min-width: 600px) {
-  .gallery-container {
+  .picture-gallery {
     margin-left: 15%;
     margin-right: 15%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: solid 2px red;
+  }
+  .picture-gallery .title {;
+    border: 1px solid green;
+  }
+
+  .gallery-container {
+    height: 600px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
   }
 
   .gallery {
-    padding: 0;
-    align-self: center;
-    max-height: 600px;
-    max-width: 1040px;
-    border: 2px solid blue;
-    overflow-x: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+  
 }
 
 /*---------- PIC GALLERY STYLE END -----------*/
