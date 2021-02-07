@@ -214,7 +214,7 @@ li:hover {
   line-height: 20px;
 }
 
-.play-pause {
+.stop-slides {
   position: absolute;
   color:white;
   border: solid 1px white;
@@ -225,6 +225,11 @@ li:hover {
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.stop-slides:hover {
+  background-color: white;
+  color: black;
 }
 
 .left-slide:hover { cursor: pointer;}
@@ -309,7 +314,7 @@ li:hover {
     border-radius: 10px;
   }
 
-  .play-pause {
+  .stop-slides {
     width: 120px;
     font-size: 14px;
     padding: 5px;
