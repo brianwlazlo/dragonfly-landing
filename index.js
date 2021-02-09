@@ -20,14 +20,13 @@ function work () {
   t = setInterval(autoPlay, 3000)
 }
 
-function handlePlayPause () {
-  $('.play-pause').click(function() {
-    console.log('button clicked');
+function handleStopSlidesBtn () {
+  $('.stop-slides').click(function() {
     clearInterval(t);
   })
 }
 work();
-$(handlePlayPause);
+$(handleStopSlidesBtn);
 /*
 setInterval(function() {
   document.getElementById('radio' + counter).checked = true;
