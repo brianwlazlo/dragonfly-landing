@@ -376,6 +376,15 @@ h4 {
 /*--------- STATS BAR STYLE END ------------*/
 
 /*--------- WELCOME GRP STYLE START --------*/
+.welcome-message ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.welcome-message li {
+  line-height: 2.0;
+}
+
 .welcome-message h2 {
   font-size: 20px;
   font-weight: lighter;
@@ -409,11 +418,22 @@ h4 {
     max-width: 1000px;
   }
 
+  .welcome-message ul {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .welcome-message li {
+    line-height: 2.5;
+  }
+
   .welcome-message h2 {
     font-size: 32px;
   }
   .welcome-message p {
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 7%;
     padding-right: 7%;
   }
