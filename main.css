@@ -934,3 +934,23 @@ button[type='submit']:hover {
 /*---------- CONTACT FORM STYLE END ----------*/
 
 
+/*----------- FOOTER STYLE START -------------*/
+.footer {
+  background-color: rgb(42, 71, 71);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+
+.footer p {
+ margin:0;
+}
+
+.footer a {color: white;}
+.footer a:hover {color: white;}
+.footer a:visited {color: white;}
+
+
+/*----------- FOOTER STYLE END -------------*/ 
