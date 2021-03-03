@@ -116,10 +116,6 @@ button:hover {
   border: 2px solid rgb(36, 35, 35);
 }
 
-li:hover {
-  border: 2px solid whitesmoke;
-}
-
 @media all and (min-width: 600px) {
   .menu-options {
     max-width: 100%;
